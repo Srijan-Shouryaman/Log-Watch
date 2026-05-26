@@ -108,35 +108,6 @@ emitter.on('error:threshold', (file) => { /* ... */ });
 emitter.on('stop', () => { /* watch stops */ });
 ```
 
-## Week 1 Concepts Demonstrated
-
-### Async/Await
-- Parallel file analysis with `Promise.all`
-- Sequential vs parallel execution patterns
-- Error handling with try/catch
-
-### Event Loop
-- EventEmitter and custom events
-- setTimeout debouncing in watch mode
-- process.nextTick understanding via stream events
-
-### Streams
-- `fs.createReadStream` for memory efficiency
-- `readline` interface for line-by-line processing
-- Avoiding buffer the entire file into memory
-
-### Node.js Core Modules
-- `fs/promises` for async file operations
-- `fs.watch` for file system monitoring
-- `path` for file path manipulation
-- `readline` for line-by-line reading
-- `events.EventEmitter` for event-driven architecture
-
-### Error Handling
-- Per-file error handling (one bad file doesn't crash analyzer)
-- Process exit codes (0 for success, 1 for error)
-- Graceful shutdown on watch timeout
-
 ## Testing
 
 Generate sample log files:
